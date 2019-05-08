@@ -1,0 +1,13 @@
+apiVersion: addons.sigs.k8s.io/v1alpha1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  channel: prod
+  clusterName: prod-cluster
+  git:
+    syncRepo: git@github.com:willbeason/csp-config-management.git
+    syncBranch: prod
+    secretType: ssh
+    policyDir: foo-corp
+  enableHierarchicalResourceQuota: true
