@@ -3,7 +3,7 @@ kind: ConfigManagement
 metadata:
   name: config-management
 spec:
-  channel: staging
+  channel: dev
   clusterName: staging-cluster
   git:
     syncRepo: git@github.com:willbeason/csp-config-management.git
