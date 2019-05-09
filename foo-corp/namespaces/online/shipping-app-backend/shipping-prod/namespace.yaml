@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: shipping-prod
-  labels:
-    env: prod
-  annotations:
-    audit: "true"
-    configmanagement.gke.io/cluster-selector: prod

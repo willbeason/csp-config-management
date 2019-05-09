@@ -2,6 +2,8 @@ kind: ResourceQuota
 apiVersion: v1
 metadata:
   name: quota
+  annotations:
+    configmanagement.gke.io/cluster-selector: dev
 spec:
   hard:
     pods: "1"

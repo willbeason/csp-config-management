@@ -2,6 +2,8 @@ kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: job-creator
+  annotations:
+    configmanagement.gke.io/cluster-selector: dev
 rules:
 - apiGroups: ["batch/v1"]
   resources: ["jobs"]
